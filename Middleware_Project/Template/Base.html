@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+<h3>Count: {{ c }}</h3>
+
+<form method="POST" action="{% url 'count_view' %}">
+    {% csrf_token %}
+    <button type="submit">Click</button>
+</form>
+
+</body>
+</html>
+
